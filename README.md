@@ -14,22 +14,41 @@ To write a program to find the 1-norm, 2-norm and infinity norm of the matrix an
 # Developed By: SIDDHARTH N N
 # 1-Norm of a Matrix
 
-<img width="963" height="490" alt="image" src="https://github.com/user-attachments/assets/1cc8f9b3-eab1-46c0-8eca-bcb70b628790" />
+import os
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
 
+import numpy as np
+matrix=eval(input())
+one_matrix=np.linalg.norm(matrix,1)
+print("{:.2f}".format(one_matrix))
 
 
 # 2-Norm of a Matrix
 
-<img width="917" height="655" alt="image" src="https://github.com/user-attachments/assets/9a99793b-645b-4f52-87df-6d7630b53f66" />
+'''
+Program to find 2-norm of a matrix.
+Developed by: SIDDAHRTH N N
+RegisterNumber: 212225240148 
+'''
+import os
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+import numpy as np
+matrix=np.array(eval(input()))
+two_matrix = np.linalg.norm(matrix,2)
+print("{:.2f}".format(two_matrix))
 
 
 
 # Infinity Norm of a Matrix
 
 
-<img width="952" height="572" alt="image" src="https://github.com/user-attachments/assets/bf7aab4b-d30e-4660-94e2-754c252ace78" />
+import os
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
 
-
+import numpy as np
+matrix=eval(input())
+inf_matrix=np.linalg.norm(matrix,np.inf)
+print("{:.2f}".format(inf_matrix))
 
 ```
 ## Output:
